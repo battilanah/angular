@@ -1,13 +1,14 @@
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-      <h2>Mes appareils</h2>
-      <ul class="list-group">
-        <app-appareil></app-appareil>
-        <app-appareil></app-appareil>
-        <app-appareil></app-appareil>
-        <button class="btn btn-success" [disabled]="!isAuth" (click)="onAllumer()">Tout allumer</button>
-      </ul>
-    </div>
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="margin:20px;" >
+  <h1>{{title}}</h1>
+
+  <div class="list-group">
+
+    <app-post-list
+      [lesposts]="posts"
+    >
+    </app-post-list>
+
   </div>
+
 </div>
